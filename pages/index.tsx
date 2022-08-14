@@ -4,33 +4,44 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Body from "../components/Body";
 import OmMeg from "../components/OmMeg";
-
+import Prosjekter from "../components/Prosjekter";
 /*className="flex min-h-screen flex-col items-center justify-center py-2" */
 
+import React, { useState, useEffect, useRef } from "react";
+import useSWR from "swr";
+
 const Home: NextPage = () => {
+  const fetcher = (...args: Parameters<typeof fetch>) =>
+    fetch(...args).then((res) => res.json());
+
+  const { data, error } = useSWR("/api/prosjekt", fetcher);
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>Loading...</div>;
+
   console.log("console gang her");
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="bg-[#181826] h-[2200px] ">
+      <main className="bg-[#181826]  ">
         <Body />
         <OmMeg />
+        <Prosjekter data={data} />
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
           className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/magnus411"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          Powered by Gjerstad
         </a>
+        s
       </footer>
     </div>
   );

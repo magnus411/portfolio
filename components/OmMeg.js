@@ -11,18 +11,18 @@ function OmMeg() {
           <h1 className="underline underline-offset-8 text-white text-center text-4xl font-bold font-intra">
             Litt om meg
           </h1>
-          <p className="mt-10 text-white container mx-auto text-xl text-center text-center text-center ">
+          <p className="mt-10 text-white container mx-auto text-xl text-center  ">
             21 år gammel entusiastisk-alt mulig-mann som står hardt på for å nå
             sine mål. Teknologi interessert, god ledererfaring, er
             løsningsorientert, blid og omgjengelig.
           </p>
 
-          <p className="mt-10 text-white container mx-auto text-xl text-center text-center text-center ">
+          <p className="mt-10 text-white container mx-auto text-xl  ">
             Min største egenskap er passion og evne til å lære meg nye
             ferdigheter.
           </p>
 
-          <p className="mt-10 text-white container mx-auto text-xl text-center text-center text-center ">
+          <p className="mt-10 text-white container mx-auto text-xl ">
             Jeg har stor bredde i min kompetanse da jeg har erfaring innenfor
             ledelse, salg, programering, IT, flm, foto, grafsk, web, 3D og
             markedsføringsstragegier.
