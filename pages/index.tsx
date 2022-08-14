@@ -2,9 +2,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import Body from "../components/Body";
+import OmMeg from "../components/OmMeg";
+
 /*className="flex min-h-screen flex-col items-center justify-center py-2" */
 
 const Home: NextPage = () => {
+  console.log("console gang her");
   return (
     <div>
       <Head>
@@ -12,8 +16,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="from-slate-800 via-slate-900 via-indigo-900 to-rose-900 bg-gradient-to-t h-[900px] backdrop-sepia">
-        <h1 className="text-6xl font-bold">Hello World!</h1>
+      <main className="bg-[#181826] h-[2200px] ">
+        <Body />
+        <OmMeg />
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
