@@ -23,12 +23,18 @@ function Body() {
               NTNU
             </h1>
           </div>
-          <button
-            className="mt-3  bg-transparent hover:bg-green-600 text-green-600 font-semibold hover:text-white text-lg py-2 px-10 border border-green-500 hover:border-transparent rounded"
-            type="button"
-          >
-            Hire Me!
-          </button>
+          <div className="flex">
+            <button
+              className="mt-3  bg-transparent hover:bg-green-600 text-green-600 font-semibold hover:text-white text-lg py-2 px-10 border border-green-500 hover:border-transparent rounded"
+              type="button"
+            >
+              Hire Me!
+            </button>
+          </div>
+          <h1 className="text-xl md:text-xl text-white ml-3 mt-4">
+            {" "}
+            - Siden er under utvikling.tartet 14.08 med den.
+          </h1>
         </div>
 
         <div className=" h-[600px] pl-10 md:p-0">
