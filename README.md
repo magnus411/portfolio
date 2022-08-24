@@ -2,6 +2,8 @@
 FIGMA Link: 
 https://www.figma.com/file/HYHM5kOgSwcC7dkHAk4sYX/Portfolio?node-id=0%3A1
 
+# IKKE FERDIG ENDA
+
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 ## Deploy your own
