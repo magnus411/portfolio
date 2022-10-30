@@ -17,12 +17,12 @@ function OmMeg() {
             løsningsorientert, blid og omgjengelig.
           </p>
 
-          <p className="mt-10 text-white container mx-auto text-xl  ">
+          <p className="mt-10 text-white text-center container mx-auto text-xl  ">
             Min største egenskap er passion og evne til å lære meg nye
             ferdigheter.
           </p>
 
-          <p className="mt-10 text-white container mx-auto text-xl ">
+          <p className="mt-10 text-white container text-center mx-auto text-xl ">
             Jeg har stor bredde i min kompetanse da jeg har erfaring innenfor
             ledelse, salg, programering, IT, flm, foto, grafsk, web, 3D og
             markedsføringsstragegier.

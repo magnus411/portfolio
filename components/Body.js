@@ -33,7 +33,7 @@ function Body() {
           </div>
           <h1 className="text-xl md:text-xl text-white ml-3 mt-4">
             {" "}
-            - Siden er under utvikling.tartet 14.08 med den.
+            - Siden er under utvikling
           </h1>
         </div>
 
@@ -42,7 +42,7 @@ function Body() {
             <Image
               layout="fill"
               objectFit="cover"
-              src="https://i.imgur.com/ob1vubg.png"
+              src="https://i.imgur.com/ew51bpc.jpg"
             ></Image>
             <div className=" md:m-5 m-5 bg-white w-full md:w-full h-[525px] md:h-[520px]"></div>
           </div>
