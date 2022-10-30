@@ -67,9 +67,8 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by Gjerstad
+          Lagd av Gjerstad
         </a>
-        s
       </footer>
     </div>
   );

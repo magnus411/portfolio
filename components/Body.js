@@ -24,12 +24,14 @@ function Body() {
             </h1>
           </div>
           <div className="flex">
-            <button
-              className="mt-3  bg-transparent hover:bg-green-600 text-green-600 font-semibold hover:text-white text-lg py-2 px-10 border border-green-500 hover:border-transparent rounded"
-              type="button"
-            >
-              Hire Me!
-            </button>
+            <a href="/vcard.vcf">
+              <button
+                className="mt-3  bg-transparent hover:bg-green-600 text-green-600 font-semibold hover:text-white text-lg py-2 px-10 border border-green-500 hover:border-transparent rounded"
+                type="button"
+              >
+                Hire Me!
+              </button>
+            </a>
           </div>
           <h1 className="text-xl md:text-xl text-white ml-3 mt-4">
             {" "}

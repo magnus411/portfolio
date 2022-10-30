@@ -1,8 +1,21 @@
 BEGIN:VCARD
 VERSION:3.0
-FN;CHARSET=UTF-8:Magnus Gjerstad
-N;CHARSET=UTF-8:Gjerstad;Magnus;;Mr;
-NICKNAME;CHARSET=UTF-8:sdsdsd
-EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:asd
-REV:2022-10-30T17:47:38.059Z
+N:Gerstad;Magnus;;;
+FN:Magnus Gerstad
+ORG:
+ADR;TYPE=WORK:
+TITLE:Utvikler
+TEL;TYPE=CELL:+4748218789
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=WORK:magnusgjerstad00@gmail.com
+URL;TYPE=Digital Business Card:
+URL:gjerstad.tech
+URL;TYPE=Website:gjerstad.tech
+URL;TYPE=GitHub:https://github.com/magnus411
+URL;TYPE=LinkedIn:https://linkedin.com/in/magnus-gjerstad-85b184177
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:
+UID:EnBizCard-100892964
 END:VCARD

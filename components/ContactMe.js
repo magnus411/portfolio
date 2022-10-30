@@ -22,7 +22,7 @@ export default function ContactMe() {
             Har du noen spørsmål, eller ønsker du å ta en prat, kan du kontakte
             meg her:
           </p>
-          <div className="bg-[#283141] mt-5 flex gap-3 justify-center pt-3 h-20 mx-auto w-1/3 rounded-md ">
+          <div className="bg-[#283141] mt-5 flex gap-3 justify-center pt-3 h-20 mx-auto  rounded-md ">
             <a href="https://no.linkedin.com/in/magnus-gjerstad-85b184177">
               <SiLinkedin className="text-white text-5xl" />
             </a>
@@ -32,7 +32,7 @@ export default function ContactMe() {
             <a href="/vcard.vcf">
               <BsFillTelephoneFill className="text-white  text-5xl" />
             </a>
-            <a href="">
+            <a href="https://github.com/magnus411">
               <GoMarkGithub className="text-white  text-5xl" />
             </a>
           </div>
