@@ -12,15 +12,16 @@ export default function ContactMe() {
         <div></div>
 
         <div className="col-span-4">
-          <h1 className="underline underline-offset-8 text-white text-center text-4xl font-bold font-intra">
-            Kontakt meg
-          </h1>
+          <a href="/vcard.vcf">
+            <h1 className="underline underline-offset-8 text-white text-center text-4xl font-bold font-intra">
+              Kontakt meg
+            </h1>
+          </a>
 
           <p className="mt-5 text-white text-center container mx-auto text-xl text-center  ">
             Har du noen spørsmål, eller ønsker du å ta en prat, kan du kontakte
             meg her:
           </p>
-
           <div className="bg-[#283141] mt-5 flex gap-3 justify-center pt-3 h-20 mx-auto w-1/3 rounded-md ">
             <a href="https://no.linkedin.com/in/magnus-gjerstad-85b184177">
               <SiLinkedin className="text-white text-5xl" />
@@ -28,7 +29,7 @@ export default function ContactMe() {
             <a href="mailto:magnusgjerstad00@gmail.com">
               <AiTwotoneMail className="text-white  text-5xl" />
             </a>
-            <a href="tlf:+4748218789">
+            <a href="/vcard.vcf">
               <BsFillTelephoneFill className="text-white  text-5xl" />
             </a>
             <a href="">
