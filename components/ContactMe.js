@@ -22,19 +22,21 @@ export default function ContactMe() {
             Har du noen spørsmål, eller ønsker du å ta en prat, kan du kontakte
             meg her:
           </p>
-          <div className="bg-[#283141] mt-5 flex gap-3 justify-center pt-3 h-20 mx-auto  rounded-md ">
-            <a href="https://no.linkedin.com/in/magnus-gjerstad-85b184177">
-              <SiLinkedin className="text-white text-5xl" />
-            </a>
-            <a href="mailto:magnusgjerstad00@gmail.com">
-              <AiTwotoneMail className="text-white  text-5xl" />
-            </a>
-            <a href="/gjerstad.vcf">
-              <BsFillTelephoneFill className="text-white  text-5xl" />
-            </a>
-            <a href="https://github.com/magnus411">
-              <GoMarkGithub className="text-white  text-5xl" />
-            </a>
+          <div className="bg-gradient-to-r from-violet-900 to-fuchsia-500 rounded-md">
+            <div className="bg-[#181826]/20 m mt-5 flex gap-3 justify-center pt-4 h-20 mx-auto   rounded-md  ">
+              <a href="https://no.linkedin.com/in/magnus-gjerstad-85b184177">
+                <SiLinkedin className="text-white text-5xl" />
+              </a>
+              <a href="mailto:magnusgjerstad00@gmail.com">
+                <AiTwotoneMail className="text-white  text-5xl" />
+              </a>
+              <a href="/gjerstad.vcf">
+                <BsFillTelephoneFill className="text-white  text-5xl" />
+              </a>
+              <a href="https://github.com/magnus411">
+                <GoMarkGithub className="text-white  text-5xl" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
