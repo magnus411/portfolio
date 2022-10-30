@@ -12,7 +12,7 @@ export default function ContactMe() {
         <div></div>
 
         <div className="col-span-4">
-          <a href="/vcard.vcf">
+          <a href="/gjerstad.vcf">
             <h1 className="underline underline-offset-8 text-white text-center text-4xl font-bold font-intra">
               Kontakt meg
             </h1>
@@ -29,7 +29,7 @@ export default function ContactMe() {
             <a href="mailto:magnusgjerstad00@gmail.com">
               <AiTwotoneMail className="text-white  text-5xl" />
             </a>
-            <a href="/vcard.vcf">
+            <a href="/gjerstad.vcf">
               <BsFillTelephoneFill className="text-white  text-5xl" />
             </a>
             <a href="https://github.com/magnus411">

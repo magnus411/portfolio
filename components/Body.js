@@ -17,14 +17,14 @@ function Body() {
               En ung utvikler,
             </h1>
             <h1 className="text-lg md:text-3xl font-inter font-semibold md:pt-2 text-white">
-              som for tiden studerer dataingeiør ved
+              som for tiden studerer dataingeniør ved
             </h1>
             <h1 className="text-xl md:text-3xl font-inter font-semibold text-white">
               NTNU
             </h1>
           </div>
           <div className="flex">
-            <a href="/vcard.vcf">
+            <a href="/gjerstad.vcf">
               <button
                 className="mt-3  bg-transparent hover:bg-green-600 text-green-600 font-semibold hover:text-white text-lg py-2 px-10 border border-green-500 hover:border-transparent rounded"
                 type="button"
