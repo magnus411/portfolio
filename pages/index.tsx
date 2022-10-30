@@ -6,6 +6,7 @@ import Body from "../components/Body";
 import OmMeg from "../components/OmMeg";
 import Prosjekter from "../components/Prosjekter";
 /*className="flex min-h-screen flex-col items-center justify-center py-2" */
+import ContactMe from "../components/ContactMe";
 
 import React, { useState, useEffect, useRef } from "react";
 import useSWR from "swr";
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
         <Header />
         <main className="bg-[#181826]  ">
           <Body />
+          <ContactMe />
           <OmMeg />
         </main>
 
@@ -53,6 +55,7 @@ const Home: NextPage = () => {
       <Header />
       <main className="bg-[#181826]  ">
         <Body />
+        <ContactMe />
         <OmMeg />
         <Prosjekter data={data} />
       </main>

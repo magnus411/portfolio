@@ -11,10 +11,11 @@ function Prosjekter({ data }) {
   return (
     <div>
       <div>
-        <h1 className="pb-10 underline underline-offset-8 text-white text-center text-4xl font-bold font-intra">
+        <h1 className="pb-5 pt-10 underline underline-offset-8 text-white text-center text-4xl font-bold font-intra">
           Prosjekter
         </h1>
 
+        {/*
         <div className="space-x-4 justify-center text-center">
           <button
             onClick={() => setActive(1)}
@@ -33,6 +34,7 @@ function Prosjekter({ data }) {
             3D
           </button>
         </div>
+        */}
 
         <div className="p-5 container mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
           {data.map((t) => (
