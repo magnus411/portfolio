@@ -53,11 +53,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="bg-[#181826]  ">
-        <Body />
-        <ContactMe />
-        <OmMeg />
-        <Prosjekter data={data} />
+      <main className=" ">
+        <div className="bg-gradient-to-r from-violet-900 to-fuchsia-500  border-y-8 border-violet-900 mb-10">
+          <div className="bg-[#181826]/40 ">
+            <Body />
+          </div>
+        </div>
+        <div className="bg-[#181826]">
+          <ContactMe />
+          <OmMeg />
+          <Prosjekter data={data} />
+        </div>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
