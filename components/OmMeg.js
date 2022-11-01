@@ -24,7 +24,7 @@ function OmMeg() {
 
           <p className="mt-10 text-white container text-center mx-auto text-xl ">
             Jeg har stor bredde i min kompetanse da jeg har erfaring innenfor
-            ledelse, salg, programmering, IT, flm, foto, grafisk, web, 3D og
+            ledelse, salg, programmering, IT, film, foto, grafisk, web, 3D og
             markedsføringsstrategier.
           </p>
         </div>
