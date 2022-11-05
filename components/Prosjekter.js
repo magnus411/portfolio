@@ -3,10 +3,16 @@ import Link from "next/link";
 import Button from "next";
 
 function Prosjekter({ data }) {
-  const [Rdata, setRData] = useState(data);
+  let Sdata = data
+    .filter((data) => data.kategori == "Prosjekt")
+    .sort((a, b) => (a.Sort > b.Sort ? 1 : -1));
+
+  const [Rdata, setRData] = useState(Sdata);
 
   const filter = (put) => {
-    const filteredData = data.filter((data) => data.kategori === put);
+    const filteredData = data
+      .filter((data) => data.kategori === put)
+      .sort((a, b) => (a.Sort > b.Sort ? 1 : -1));
     setRData(filteredData);
   };
 
@@ -56,7 +62,7 @@ function Prosjekter({ data }) {
         </div>
 
         <div className="p-5 container mx-auto grid  grid-cols-1  md:grid-cols-3 gap-5">
-          {Rdata.sort((a, b) => (a.Sort > b.Sort ? 1 : -1)).map((t) => (
+          {Rdata.map((t) => (
             <div className="   bg-gradient-to-r from-violet-800 to-fuchsia-800  rounded-md p-4">
               <div className="bg-[#14141f] rounded-md h-max -m-2 p-3">
                 <div>
