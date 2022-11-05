@@ -33,9 +33,23 @@ function Prosjekter({ data }) {
           >
             Erfaring
           </button>
-          <button class="bg-blue-500  text-white font-bold py-2 px-4 rounded">
+          <button
+            onClick={() => {
+              filter("AE");
+            }}
+            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+          >
+            Andre erfaringer
+          </button>
+          <button
+            onClick={() => {
+              filter("Utdanning");
+            }}
+            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+          >
             Utdanning
           </button>
+
           <button class="bg-blue-500  text-white font-bold py-2 px-4 rounded">
             3D
           </button>
@@ -56,8 +70,8 @@ function Prosjekter({ data }) {
                     {t.StartSlutt}
                   </p>
 
-                  <h1 className="text-white font-intra text-xl pb-3">
-                    {t.Beskrivelse}
+                  <h1 className="whitespace-pre-line	text-white font-intra text-xl pb-3">
+                    {t.Beskrivelse && t.Beskrivelse.replaceAll("\\n", "\n\n")}
                   </h1>
                 </div>
                 <div className=" text-green-300 text-lg font-intra">
