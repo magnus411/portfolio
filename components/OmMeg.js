@@ -12,7 +12,7 @@ function OmMeg() {
             Litt om meg
           </h1>
           <p className="mt-10 text-white container mx-auto text-xl text-center  ">
-            21 år gammel entusiastisk-alt mulig-mann som står hardt på for å nå
+            22 år gammel entusiastisk-alt mulig-mann som står hardt på for å nå
             sine mål. Teknologi interessert, god ledererfaring, er
             løsningsorientert, blid og omgjengelig.
           </p>
