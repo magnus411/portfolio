@@ -13,17 +13,17 @@ function ProsjektSkeleton() {
             Prosjekter
           </button>
 
-          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Erfaring
           </button>
-          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Andre erfaringer
           </button>
-          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Utdanning
           </button>
 
-          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             3D
           </button>
         </div>

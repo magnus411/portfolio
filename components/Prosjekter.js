@@ -35,7 +35,7 @@ function Prosjekter({ data }) {
             onClick={() => {
               filter("Erfaring");
             }}
-            class="bg-blue-600  text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Erfaring
           </button>
@@ -43,7 +43,7 @@ function Prosjekter({ data }) {
             onClick={() => {
               filter("AE");
             }}
-            class="bg-blue-600  text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Andre erfaringer
           </button>
@@ -51,12 +51,12 @@ function Prosjekter({ data }) {
             onClick={() => {
               filter("Utdanning");
             }}
-            class="bg-blue-600  text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Utdanning
           </button>
 
-          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             3D
           </button>
         </div>
