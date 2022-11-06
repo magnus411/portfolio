@@ -7,9 +7,10 @@ import OmMeg from "../components/OmMeg";
 import Prosjekter from "../components/Prosjekter";
 /*className="flex min-h-screen flex-col items-center justify-center py-2" */
 import ContactMe from "../components/ContactMe";
-
+import Footer from "../components/Footer";
 import React, { useState, useEffect, useRef } from "react";
 import useSWR from "swr";
+import ProsjektSkeleton from "../components/ProsjektSkeleton";
 
 const Home: NextPage = () => {
   const fetcher = (...args: Parameters<typeof fetch>) =>
@@ -34,20 +35,11 @@ const Home: NextPage = () => {
           <div className="bg-[#181826]">
             <ContactMe />
             <OmMeg />
+            <ProsjektSkeleton />
           </div>
         </main>
 
-        <footer className="flex h-24 w-full items-center justify-center border-t">
-          <a
-            className="flex items-center justify-center gap-2"
-            href="https://github.com/magnus411"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by Gjerstad
-          </a>
-          s
-        </footer>
+        <Footer />
       </div>
     );
 
@@ -68,20 +60,12 @@ const Home: NextPage = () => {
         <div className="bg-[#181826]">
           <ContactMe />
           <OmMeg />
+
           <Prosjekter data={data} />
         </div>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://github.com/magnus411"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lagd av Gjerstad
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 };
