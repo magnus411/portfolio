@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import Body from "../components/Body";
 import OmMeg from "../components/OmMeg";
 import Prosjekter from "../components/Prosjekter";
-/*className="flex min-h-screen flex-col items-center justify-center py-2" */
 import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
 import React, { useState, useEffect, useRef } from "react";
@@ -33,6 +32,7 @@ const Home: NextPage = () => {
           <meta
             property="og:title"
             content="Magnus Gjerstad | Portfolio / CV"
+            key="title"
           />
           <meta property="og:image" content="https://i.imgur.com/ew51bpc.jpg" />
           <meta
