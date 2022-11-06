@@ -24,6 +24,21 @@ const Home: NextPage = () => {
         <Head>
           <title>Portfolio</title>
           <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="I'M Magnus Gjerstad. En ung utvikler, som for tiden studerer dataingeniør ved NTNU. 22 år gammel entusiastisk-alt mulig-mann som står hardt på for å nå sine mål.
+            "
+            key="desc"
+          />
+          <meta
+            property="og:title"
+            content="Magnus Gjerstad | Portfolio / CV"
+          />
+          <meta property="og:image" content="https://i.imgur.com/ew51bpc.jpg" />
+          <meta
+            property="og:description"
+            content="I'M Magnus Gjerstad. En ung utvikler, som for tiden studerer dataingeniør ved NTNU."
+          />
         </Head>
         <Header />
         <main className="bg-[#181826]  ">

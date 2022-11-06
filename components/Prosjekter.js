@@ -23,10 +23,10 @@ function Prosjekter({ data }) {
           Prosjekter
         </h1>
 
-        <div className="space-x-4 justify-center text-center">
+        <div className="space-x-3  text-center space-y-3">
           <button
             onClick={() => filter("Prosjekt")}
-            className="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Prosjekter
           </button>
@@ -35,7 +35,7 @@ function Prosjekter({ data }) {
             onClick={() => {
               filter("Erfaring");
             }}
-            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+            class="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Erfaring
           </button>
@@ -43,7 +43,7 @@ function Prosjekter({ data }) {
             onClick={() => {
               filter("AE");
             }}
-            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+            class="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Andre erfaringer
           </button>
@@ -51,12 +51,12 @@ function Prosjekter({ data }) {
             onClick={() => {
               filter("Utdanning");
             }}
-            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+            class="bg-blue-600  text-white font-bold py-2 px-4 rounded"
           >
             Utdanning
           </button>
 
-          <button class="bg-blue-500  text-white font-bold py-2 px-4 rounded">
+          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             3D
           </button>
         </div>
@@ -89,7 +89,7 @@ function Prosjekter({ data }) {
                       onClick={(e) => {
                         location.href = t.Link;
                       }}
-                      className="mt-4 align-baseline bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                      className="mt-4 align-baseline bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                     >
                       Link
                     </button>

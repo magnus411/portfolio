@@ -8,40 +8,22 @@ function ProsjektSkeleton() {
           Prosjekter
         </h1>
 
-        <div className="space-x-4 justify-center text-center">
-          <button
-            onClick={() => filter("Prosjekt")}
-            className="bg-blue-500  text-white font-bold py-2 px-4 rounded"
-          >
+        <div className="space-x-3  text-center space-y-3">
+          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Prosjekter
           </button>
 
-          <button
-            onClick={() => {
-              filter("Erfaring");
-            }}
-            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
-          >
+          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Erfaring
           </button>
-          <button
-            onClick={() => {
-              filter("AE");
-            }}
-            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
-          >
+          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Andre erfaringer
           </button>
-          <button
-            onClick={() => {
-              filter("Utdanning");
-            }}
-            class="bg-blue-500  text-white font-bold py-2 px-4 rounded"
-          >
+          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             Utdanning
           </button>
 
-          <button class="bg-blue-500  text-white font-bold py-2 px-4 rounded">
+          <button class="bg-blue-600  text-white font-bold py-2 px-4 rounded">
             3D
           </button>
         </div>

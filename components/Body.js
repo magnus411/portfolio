@@ -41,7 +41,13 @@ function Body() {
 
         <div className=" h-[600px] pl-10 md:p-0">
           <div className=" w-10/12 md:h-5/6 h-5/6 md:w-96 relative ">
-            <Image layout="fill" objectFit="cover" src="/Gjerstad.webp"></Image>
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="https://i.imgur.com/ew51bpc.jpg"
+              priority
+              alt="Portrett av Magnus Gjerstad"
+            ></Image>
             <div className=" md:m-5 m-5 bg-white w-full md:w-full h-[525px] md:h-[520px]"></div>
           </div>
         </div>
