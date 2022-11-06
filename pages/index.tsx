@@ -27,7 +27,6 @@ const Home: NextPage = () => {
             name="description"
             content="I'M Magnus Gjerstad. En ung utvikler, som for tiden studerer dataingeniør ved NTNU. 22 år gammel entusiastisk-alt mulig-mann som står hardt på for å nå sine mål.
             "
-            key="desc"
           />
           <meta
             property="og:title"
@@ -39,6 +38,7 @@ const Home: NextPage = () => {
             property="og:description"
             content="I'M Magnus Gjerstad. En ung utvikler, som for tiden studerer dataingeniør ved NTNU."
           />
+          <meta name="robots" content="all" />
         </Head>
         <Header />
         <main className="bg-[#181826]  ">
