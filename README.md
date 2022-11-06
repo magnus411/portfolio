@@ -6,8 +6,10 @@
 
 Nettsiden er hostet med Vercel
 
-Bygd med NextJS, Tailwind CSS og FireStore som DB
+Bygd med NextJS (React), Tailwind CSS og FireStore som DB
 
 Google PageSpeed Score:
 ![alt text](https://i.imgur.com/fECsmMQ.png)
+![alt text](https://i.imgur.com/lGGXer8.png)
+
 
