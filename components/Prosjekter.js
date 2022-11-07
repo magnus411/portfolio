@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Button from "next";
+import Image from "next/image";
 
 function Prosjekter({ data }) {
   let Sdata = data
@@ -56,7 +57,12 @@ function Prosjekter({ data }) {
             Utdanning
           </button>
 
-          <button className="bg-blue-600  text-white font-bold py-2 px-4 rounded">
+          <button
+            onClick={() => {
+              filter("3D");
+            }}
+            className="bg-blue-600  text-white font-bold py-2 px-4 rounded"
+          >
             3D
           </button>
         </div>
@@ -75,6 +81,20 @@ function Prosjekter({ data }) {
                   <p className="text-white text-md font-intra -mt-4 pb-4">
                     {t.StartSlutt}
                   </p>
+
+                  {t.BildeLink && (
+                    <div className=" -mx-3 -mb-6 -mt-7">
+                      <Image
+                        height={200}
+                        width={200}
+                        layout="responsive"
+                        objectFit="cover"
+                        src={t.BildeLink}
+                        alt="Portrett av Magnus Gjerstad"
+                        className="rounded-md"
+                      ></Image>
+                    </div>
+                  )}
 
                   <h1 className="whitespace-pre-line	text-white font-intra text-xl pb-3">
                     {t.Beskrivelse && t.Beskrivelse.replaceAll("\\n", "\n\n")}
