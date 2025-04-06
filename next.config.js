@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i.imgur.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'imgur.com',
+      },
     ],
   },
   

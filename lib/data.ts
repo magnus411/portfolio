@@ -257,7 +257,7 @@ export const projects: Project[] = [
     id: "rome-3d",
     title: "Rome 3D Visualization",
     description: "Detailed 3D visualization of ancient Roman architecture and urban planning.",
-    image: "https://imgur.com/JiF1rPJ",
+    image: "https://i.imgur.com/JiF1rPJ.jpeg",
     category: "design",
     date: "2023-05-01",
     tags: ["3D Modeling", "Historical Visualization", "Blender", "Architecture"]

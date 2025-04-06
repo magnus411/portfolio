@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { projects } from "@/lib/data";
+import { projects, type Project } from "@/lib/data"; // Import Project type
 import { ProjectCard } from "./project-card";
 import { ProjectDialog } from "./project-dialog";
 import { Badge } from "@/components/ui/badge";
@@ -16,9 +16,10 @@ import {
 import { Tags } from "lucide-react";
 
 export function ProjectsGrid() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  // Fix 1: Properly type the state
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("programming");
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]); // Fix 2: Specify string array type
 
   const allTags = Array.from(
     new Set(projects.flatMap((project) => project.tags || []))
@@ -27,13 +28,13 @@ export function ProjectsGrid() {
   const filteredProjects = projects
     .filter((project) => {
       const categoryMatch = project.category === selectedCategory;
+      const projectTags = project.tags || []; // Fix 3: Provide fallback empty array
       const tagsMatch =
         selectedTags.length === 0 ||
-        (project.tags && selectedTags.every((tag) => project.tags.includes(tag)));
+        selectedTags.every((tag) => projectTags.includes(tag));
       return categoryMatch && tagsMatch;
     })
     .sort((a, b) => {
-      // Sort by date if available (newest first)
       if (a.date && b.date) {
         return new Date(b.date).getTime() - new Date(a.date).getTime();
       }
@@ -76,7 +77,8 @@ export function ProjectsGrid() {
                   <Tags className="w-4 h-4" />
                   <span>Filter Tags</span>
                   {selectedTags.length > 0 && (
-                    <Badge variant="primary" className="ml-2">
+                    // Fix 4: Use valid Badge variant
+                    <Badge variant="secondary" className="ml-2">
                       {selectedTags.length}
                     </Badge>
                   )}
@@ -97,7 +99,8 @@ export function ProjectsGrid() {
                   >
                     <span>{tag}</span>
                     {selectedTags.includes(tag) && (
-                      <Badge variant="primary" className="ml-2">
+                      // Fix 5: Use valid Badge variant
+                      <Badge variant="secondary" className="ml-2">
                         ✓
                       </Badge>
                     )}
