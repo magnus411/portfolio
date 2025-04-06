@@ -23,7 +23,7 @@ export function Footer() {
               <span className="text-sm font-medium">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/magnus-gjerstad"
+              href="https://www.linkedin.com/in/magnus-gjerstad-85b184177/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -32,7 +32,7 @@ export function Footer() {
               <span className="text-sm font-medium">LinkedIn</span>
             </a>
             <a
-              href="mailto:magnus.gjerstad@outlook.com"
+              href="mailto:magnusgjerstad00@gmail.com"
               className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-6 h-6" />

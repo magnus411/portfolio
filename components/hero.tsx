@@ -32,11 +32,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
                 <Code className="w-5 h-5" />
-                <span>Developer</span>
-              </div>
-              <div className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
-                <Palette className="w-5 h-5" />
-                <span>3D Artist</span>
+                <span>Full Stack Developer</span>
               </div>
             </div>
 
@@ -51,7 +47,7 @@ export function Hero() {
                 <span className="font-medium">GitHub</span>
               </a>
               <a
-                href="https://linkedin.com/in/magnus-gjerstad"
+                href="https://www.linkedin.com/in/magnus-gjerstad-85b184177/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -60,7 +56,7 @@ export function Hero() {
                 <span className="font-medium">LinkedIn</span>
               </a>
               <a
-                href="mailto:magnus.gjerstad@outlook.com"
+                href="mailto:magnusgjerstad00@gmail.com"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-6 h-6" />

@@ -50,16 +50,7 @@ export const projects: Project[] = [
     date: "2024-03-01", // Adjusted to ensure it appears near top
     tags: ["Content Production", "Marketing", "Design", "Web Development"]
   },
-  {
-    id: "bookibud-developer",
-    title: "System Developer at Bookibud",
-    description: "Upcoming role as a system developer focusing on software development and system architecture.",
-    longDescription: "Taking on a new role as a system developer at Bookibud, contributing to the development and maintenance of their software systems.",
-    category: "work",
-    period: "June 25, 2024 - August 25, 2024",
-    date: "2024-06-25",
-    tags: ["Software Development", "System Architecture"]
-  },
+
   {
     id: "team-midgard",
     title: "Design & Content Producer at Team Midgard AS",
@@ -176,24 +167,7 @@ export const projects: Project[] = [
     tags: ["Media Production", "Communication", "Digital Content"]
   },
 
-  // Programming Projects
-  {
-    id: "portfolio-website",
-    title: "Personal Portfolio Website",
-    description: "This portfolio website built with Next.js and modern web technologies.",
-    longDescription: "A modern, responsive portfolio website showcasing my work and experience. Built with Next.js, TypeScript, and Tailwind CSS, featuring dynamic content management and smooth animations.",
-    category: "programming",
-    date: "2024-03-01",
-    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
-    links: [
-      {
-        url: "https://github.com/magnus411/portfolio",
-        title: "GitHub Repository",
-        type: "github"
-      }
-    ],
-    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Framer Motion"]
-  },
+ 
   {
     id: "jotunheimen-website",
     title: "Jotunheimen Esport Website",
@@ -217,23 +191,246 @@ export const projects: Project[] = [
       "Booking system integration"
     ]
   },
+
+
   {
-    id: "dynamic-display",
-    title: "Dynamic Content Display System",
-    description: "Web application for dynamically updating display content across multiple screens.",
-    longDescription: "Developed a web application that enables dynamic updates of display content, including Twitch streams and event information. Originally created for Jotunheimen but designed to be scalable for broader use.",
+    id: "sparesti-system",
+    title: "Sparesti - Microservice Banking System",
+    description: "A comprehensive banking system built with microservice architecture for SysDev2 course.",
+    longDescription: "Led development of a distributed banking system using Spring Boot microservices with RabbitMQ for event-driven communication. Implemented BankID authentication and coordinated a team of 6 developers to deliver 12 interconnected services within a 3-month timeframe.",
     category: "programming",
-    date: "2023-03-01",
-    tags: ["Next.js", "React", "Full Stack"],
+    date: "2024-05-01",
+    tags: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "BankID"],
+    technologies: [
+      "Java 17",
+      "Spring Boot 3",
+      "RabbitMQ",
+      "Docker",
+      "PostgreSQL",
+      "React",
+      "TypeScript"
+    ],
+    features: [
+      "Event-driven architecture",
+      "BankID authentication",
+      "API Gateway",
+      "Service discovery",
+      "Distributed transactions"
+    ],
+    links: [
+      { url: "https://github.com/SysDev2024/wiki", title: "Project Wiki", type: "github" },
+      { url: "https://github.com/SysDev2024/frontend", title: "Frontend", type: "github" },
+      { url: "https://github.com/SysDev2024/user-service", title: "User Service", type: "github" },
+      { url: "https://github.com/SysDev2024/shared-models", title: "Shared Models", type: "github" },
+      { url: "https://github.com/SysDev2024/microservice-template", title: "Microservice Template", type: "github" },
+      { url: "https://github.com/SysDev2024/goal-service", title: "Goal Service", type: "github" },
+      { url: "https://github.com/SysDev2024/eureka-discovery", title: "Eureka Discovery", type: "github" },
+      { url: "https://github.com/SysDev2024/docker-compose-run-everything", title: "Docker Compose Setup", type: "github" },
+      { url: "https://github.com/SysDev2024/common-amqp", title: "Common AMQP Library", type: "github" },
+      { url: "https://github.com/SysDev2024/challenge-service", title: "Challenge Service", type: "github" },
+      { url: "https://github.com/SysDev2024/bank-service", title: "Bank Service", type: "github" },
+      { url: "https://github.com/SysDev2024/auth-service", title: "Auth Service", type: "github" },
+      { url: "https://github.com/SysDev2024/api-gateway", title: "API Gateway", type: "github" }
+  
+
+
+
+
+
+      
+
+
+    ]
+  },
+  {
+    id: "meta-power-quad",
+    title: "Meta Power Quad - Sensor Data Handler",
+    description: "Prototype system for Kongsberg Maritime exploring flexible sensor data handling architecture.",
+    longDescription: "Developed a prototype demonstrating technical solutions for Kongsberg Maritime's Meta Power Quad data handler. Implemented a flexible architecture allowing new sensor integration without code modifications or recompilation. Features include fail-safe mechanisms like data dumping and null-data compression, serving as a foundation for future production system decisions.",
+    category: "programming",
+    date: "2024-04-15",
+    tags: ["C", "Data Processing", ],
+    technologies: [
+      "C",
+      "socket programming",
+    ],
     links: [
       {
-        url: "https://gitfront.io/r/user-2631487/JborpsnBrjLb/Dynamic-Display-of-content/",
+        url: "https://github.com/magnus411/Fordypningsprosjekt-Kongsberg-Maritime",
+        title: "GitHub Repository",
+        type: "github"
+      }
+    ],
+    features: [
+      "Dynamic sensor integration",
+      "Data compression algorithms",
+      "Fail-safe data dumping",
+    ]
+  },
+  {
+    id: "live-display-x",
+    title: "LiveDisplayX - Digital Signage System",
+    description: "Dynamic content management system for esports center displays.",
+    longDescription: "Developed a comprehensive digital signage solution enabling dynamic updates of TV displays throughout our esports center. The system shows events, Twitch streams, menus, and promotional content. Features include role-based access control, scheduling, and emergency message broadcasting capabilities.",
+    category: "programming",
+    date: "2023-05-01",
+    tags: ["Next.js", "Digital Signage", "Real-time"],
+    technologies: [
+      "Next.js",
+      "Firebase Realtime Database",
+      "Clerk Auth",
+      "Tailwind CSS"
+    ],
+    links: [
+      {
+        url: "https://gitfront.io/r/user-2631487/wJ56L5cDXbt8/LiveDisplayX/",
         title: "Project Repository",
         type: "github"
       }
     ],
-    technologies: ["Next.js", "React", "Real-time Updates"]
+    features: [
+      "Dynamic content scheduling",
+      "Twitch stream integration",
+      "Role-based access control",
+      "Emergency broadcast system"
+    ]
   },
+  {
+    id: "jotun-monitoring",
+    title: "Esports Center Monitoring System",
+    description: "Public network monitoring dashboard for esports center infrastructure.",
+    longDescription: "Designed and implemented a real-time public monitoring system displaying network capacity, server status, and PC availability across our esports center. The solution integrates Prometheus for metrics collection, Grafana for visualization, and custom Python scripts for monitoring individual workstation activity through SNMP.",
+    category: "programming",
+    date: "2023-08-01",
+    tags: ["Monitoring", "DevOps", "Network"],
+    technologies: [
+      "Prometheus",
+      "Grafana",
+      "SNMP",
+      "Python"
+    ],
+    links: [
+      {
+        url: "https://gitfront.io/r/user-2631487/umnkcdZxd98Z/JotunMonitoring/",
+        title: "Project Repository",
+        type: "github"
+      }
+    ],
+    features: [
+      "Real-time network monitoring",
+      "PC activity tracking",
+      "Public display dashboard",
+      "Alerting system"
+    ]
+  },
+  {
+    id: "traffic-ai",
+    title: "Traffic Light AI Controller",
+    description: "Machine learning system for optimizing traffic light coordination.",
+    longDescription: "Implemented a PPO reinforcement learning agent to control multiple traffic light intersections in SUMO simulations. The system reduces congestion by enabling lights to communicate and predict traffic patterns.",
+    category: "programming",
+    date: "2023-10-01",
+    tags: ["Python", "Machine Learning", "SUMO"],
+    technologies: ["Python", "PyTorch", "SUMO", "RLlib"],
+    links: [
+      { url: "https://github.com/magnus411/traffic", title: "Source Code", type: "github" }
+    ],
+    features: [
+      "Multi-intersection coordination",
+      "Traffic prediction",
+      "PPO reinforcement learning",
+      "SUMO simulation integration"
+    ]
+  },
+  {
+    id: "apartment-hunter",
+    title: "Apartment Hunting Website",
+    description: "Next.js application for apartment hunting in Trondheim.",
+    longDescription: "Developed a website about what me and my girlfriend was looking for in an apartment, and shared it arount to potential lenders. Much more fun then sending them a boring message. This way they get to know us better. It was a huge success and we got lots of offers. We setted on an apartment that would have been way over our budget, but with the help of this website we got it for a reasonable price.",
+    category: "programming",
+    date: "2024-02-01",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
+    links: [
+      { url: "https://github.com/magnus411/Soker-leilighet", title: "Source Code", type: "github" },
+      { url: "https://www.mmsokerleilighet.info/", title: "Live Demo", type: "demo" }
+    ],
+    features: [
+      "Responsive property listings",
+      "Advanced search filters",
+      "Contact management system",
+      "Admin dashboard"
+    ]
+  },
+  {
+    id: "budget-planner",
+    title: "Budget Planner Application",
+    description: "Full-stack budgeting application, in collaboration with BN Bank.",
+    longDescription: "Developed for the SysDev1 course in collaboration with BN Bank, this application offers budget planning, expense categorization, and financial analytics. It features a Spring Boot backend.",
+    category: "programming",
+    date: "2023-11-01",
+    tags: ["Java", "Spring Boot", "Fullstack"],
+    technologies: ["Java", "Spring Boot", "Thymeleaf", "MySQL"],
+    links: [
+      { url: "https://github.com/magnus411/Budgetplan", title: "Repository", type: "github" }
+    ]
+  },
+
+  {
+    id: "path-game",
+    title: "Modular Path Construction Game",
+    description: "Java game featuring dynamic path building mechanics.",
+    longDescription: "A puzzle game where players construct paths by connecting modular components. Developed with JavaFX featuring level editor and progressive difficulty system.",
+    category: "programming",
+    date: "2023-09-01",
+    tags: ["Java", "Game Development"],
+    technologies: ["Java 17", "JavaFX", "Object-Oriented Design"],
+    links: [
+      { url: "https://github.com/magnus411/Path-Game", title: "Repository", type: "github" }
+    ]
+  },
+
+  // Updated Existing Projects
+  {
+    id: "portfolio-website",
+    title: "Portfolio Website v2",
+    description: "Portfolio website showcasing  projects.",
+    longDescription: "Portfolio website showcasing projects.",
+    category: "programming",
+    date: "2024-04-01",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    technologies: [
+      "Next.js 14",
+      "TypeScript 5",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Shadcn UI"
+    ],
+    links: [
+      { url: "https://github.com/magnus411/portfolio", title: "Repository", type: "github" }
+    ]
+  },
+ 
+  
+
+  // Work Experience (updated)
+  {
+    id: "bookibud-developer",
+    title: "System Developer at Bookibud",
+    description: "Developing scalable booking systems for sports facilities.",
+    longDescription: "Implementing microservice architecture for a nationwide sports facility booking platform. Responsibilities include API design, database optimization, and CI/CD pipeline configuration.",
+    category: "work",
+    period: "June 2024 - Present",
+    date: "2024-06-25",
+    tags: ["Java", "Spring Boot", "Microservices"],
+    technologies: [
+      "Java 21",
+      "Spring Boot 3",
+      "Kubernetes",
+      "PostgreSQL"
+    ]
+  },
+
+  // Education (updated)
   {
     id: "dynamic-scoreboard",
     title: "Dynamic Scoreboard Retropie",
@@ -244,7 +441,7 @@ export const projects: Project[] = [
     tags: ["Python", "Flask", "Next.js", "Full Stack"],
     links: [
       {
-        url: "https://gitfront.io/r/user-2631487/uvVrS56p7dju/Dynamic-Scoreboard-Retropie/",
+        url: "https://github.com/magnus411/Dynamic-Scoreboard-Retropie/",
         title: "Project Repository",
         type: "github"
       }
@@ -252,6 +449,34 @@ export const projects: Project[] = [
     technologies: ["Python", "Flask", "Next.js", "REST API", "QR Code Integration"]
   },
 
+  {
+    id: "lego-pricing-analysis",
+    title: "Lego Pricing Statistical Analysis",
+    description: "Statistical analysis comparing pricing of boys' vs girls' Lego sets.",
+    longDescription: "Conducted a comprehensive statistical analysis investigating price differences between boys' and girls' Lego sets. Developed Python scripts for data collection, cleaning, and analysis, employing hypothesis testing and visualization techniques to draw meaningful conclusions about gender-based pricing disparities in toys.",
+    category: "programming",
+    date: "2023-11-01",
+    tags: ["Python", "Statistics", "Data Analysis"],
+    technologies: [
+      "Python",
+      "Pandas",
+      "Matplotlib",
+      "Scipy"
+    ],
+    links: [
+      {
+        url: "https://github.com/magnus411/StatistikkProsjekt",
+        title: "GitHub Repository",
+        type: "github"
+      }
+    ],
+    features: [
+      "Web scraping for data collection",
+      "Statistical hypothesis testing",
+      "Data visualization",
+      "Regression analysis"
+    ]
+  },
   // Design Projects
   {
     id: "rome-3d",
