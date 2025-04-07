@@ -1,15 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Code, Palette, ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import {
+  GraduationCap,
+  Code,
+  Palette,
+  ArrowRight,
+  Github,
+  Linkedin,
+  Mail,
+} from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden py-20"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-background to-background/50 z-10" />
-      
+
       <div className="container relative z-20 mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -21,10 +32,12 @@ export function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Magnus Gjerstad
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
-              A passionate Computer Engineering student at NTNU, combining technical expertise with creative innovation.
+            <p className="text-xl md:text-xl text-muted-foreground mb-8 max-w-2xl">
+              Passionate NTNU Computer Engineering student specializing in
+              full-stack development and system design & architecture, with
+              experience across multiple frameworks and problem domains.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
                 <GraduationCap className="w-5 h-5" />
@@ -36,7 +49,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 mb-8">
+            <div className="flex flex-wrap items-center gap-4 mb-3">
               <a
                 href="https://github.com/magnus411"
                 target="_blank"
@@ -63,9 +76,17 @@ export function Hero() {
                 <span className="font-medium">Email</span>
               </a>
             </div>
-
+            <a href="tel:+4748218789">
+              <h1 className="text-md text-muted-foreground font-medium mb-4 hover:text-primary transition-colors">
+                +47 482 18 789
+              </h1>
+            </a>
             <Button
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="group"
             >
               Learn More

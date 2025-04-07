@@ -42,7 +42,6 @@ const skillCategories = {
       { name: "Node.js", icon: <Server className="w-4 h-4" /> },
       { name: "Python", icon: <Code2 className="w-4 h-4" /> },
       { name: "C", icon: <Code2 className="w-4 h-4" /> },
-      { name: "JWT", icon: <Lock className="w-4 h-4" /> },
     ],
   },
   protocols: {
@@ -53,6 +52,12 @@ const skillCategories = {
       { name: "Server-Sent Events", icon: <Radio className="w-4 h-4" /> },
       { name: "Firebase Realtime DB", icon: <Database className="w-4 h-4" /> },
       { name: "RabbitMQ", icon: <MessageSquare className="w-4 h-4" /> },
+      { name: "JWT", icon: <Lock className="w-4 h-4" /> },
+      { name: "REST", icon: <FileJson className="w-4 h-4" /> },
+      { name: "MQTT", icon: <Radio className="w-4 h-4" /> },
+      { name: "Modbus", icon: <Radio className="w-4 h-4" /> },
+      { name: "OIDC", icon: <Radio className="w-4 h-4" /> },
+      { name: "OAuth2", icon: <Radio className="w-4 h-4" /> },
     ],
   },
   database: {
@@ -92,7 +97,10 @@ const skillCategories = {
       { name: "Active Directory", icon: <Server className="w-4 h-4" /> },
       { name: "Ubuntu Server", icon: <Linux className="w-4 h-4" /> },
       { name: "Debian 8", icon: <Linux className="w-4 h-4" /> },
-      { name: "Windows Deployment Services", icon: <Box className="w-4 h-4" /> },
+      {
+        name: "Windows Deployment Services",
+        icon: <Box className="w-4 h-4" />,
+      },
     ],
   },
   design: {
@@ -120,8 +128,23 @@ export function About() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+
           <p className="text-lg text-muted-foreground mb-12 text-center">
-            I'm a 24-year-old enthusiastic Computer Engineering student at NTNU, driven by a passion for technology and innovation. With a diverse skill set spanning leadership, sales, programming, IT, film production, photography, graphic design, web development, 3D art, and marketing strategies, I bring a unique perspective to every project.
+            I'm a 24-year-old Computer Engineering student at NTNU, passionate
+            about programming, system design & architecture, and building full
+            scale solutions. I thrive on solving complex problems an turning
+            ideas into tangible products that make an impact.
+          </p>
+          <p className="text-lg text-muted-foreground mb-12 text-center">
+            Im deeply passionate about everything I choose to do, and its an
+            essension function in how I operate.
+          </p>
+          <p className="text-lg text-muted-foreground mb-12 text-center">
+            I bring hands-on experience in IT operations, leadership,
+            system/network administration, and a creative toolkit spanning film
+            production, photography, graphic design, marketing strategies, and
+            3D graphics. This unique combination allows me to bring a unique
+            perspective to every project.
           </p>
 
           <Tabs defaultValue="frontend" className="w-full">
