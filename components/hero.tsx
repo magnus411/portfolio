@@ -12,8 +12,11 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/hooks/use-translation";
 
 export function Hero() {
+  const t = useTranslation();
+
   return (
     <section
       id="home"
@@ -33,19 +36,17 @@ export function Hero() {
               Magnus Gjerstad
             </h1>
             <p className="text-xl md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Passionate NTNU Computer Engineering student specializing in
-              full-stack development and system design & architecture, with
-              experience across multiple frameworks and problem domains.
+              {t.heroDescription}
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
                 <GraduationCap className="w-5 h-5" />
-                <span>NTNU Student</span>
+                <span>{t.ntnuStudent}</span>
               </div>
               <div className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
                 <Code className="w-5 h-5" />
-                <span>Full Stack Developer</span>
+                <span>{t.fullStackDeveloper}</span>
               </div>
             </div>
 
@@ -89,7 +90,7 @@ export function Hero() {
               }
               className="group"
             >
-              Learn More
+              {t.learnMore}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>

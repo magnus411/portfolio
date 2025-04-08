@@ -3,11 +3,15 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Home, User, Briefcase, Code, Palette, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { LanguageToggle } from "./language-toggle";
+import { useTranslation } from "@/hooks/use-translation";
 
 export function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const t = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +37,9 @@ export function Navbar() {
   }, []);
 
   const navItems = [
-    { id: "home", label: "Home", icon: <Home className="w-4 h-4" /> },
-    { id: "about", label: "About", icon: <User className="w-4 h-4" /> },
-    { id: "projects", label: "Projects", icon: <Code className="w-4 h-4" /> },
+    { id: "home", label: t.home, icon: <Home className="w-4 h-4" /> },
+    { id: "about", label: t.about, icon: <User className="w-4 h-4" /> },
+    { id: "projects", label: t.projects, icon: <Code className="w-4 h-4" /> },
   ];
 
   return (
@@ -76,6 +80,9 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <LanguageToggle />
+            </li>
           </ul>
         </nav>
       </motion.div>
@@ -136,6 +143,9 @@ export function Navbar() {
                     </a>
                   </li>
                 ))}
+                <li className="px-6 py-3">
+                  <LanguageToggle />
+                </li>
               </ul>
             </motion.div>
           )}

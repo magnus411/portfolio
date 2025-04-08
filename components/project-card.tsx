@@ -1,20 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Project } from "@/lib/data";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, ChevronRight, Code2, Palette, FileCode, Briefcase, GraduationCap } from "lucide-react";
+import {
+  Github,
+  ExternalLink,
+  ChevronRight,
+  Code2,
+  Palette,
+  FileCode,
+  Briefcase,
+  GraduationCap,
+} from "lucide-react";
 
-export function ProjectCard({ project, onClick }: { project: Project; onClick: () => void }) {
+import { Project } from "@/types/project";
+import { Text } from "./Text";
+import { useTranslation } from "@/hooks/use-translation";
+
+export function ProjectCard({
+  project,
+  onClick,
+}: {
+  project: Project;
+  onClick: () => void;
+}) {
   const CategoryIcon = {
     programming: Code2,
     "3d": Palette,
     design: FileCode,
     work: Briefcase,
-    education: GraduationCap
+    education: GraduationCap,
   }[project.category];
+
+  const t = useTranslation();
 
   return (
     <motion.div
@@ -39,31 +59,36 @@ export function ProjectCard({ project, onClick }: { project: Project; onClick: (
             <div>
               <div className="flex items-start justify-between gap-4">
                 <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                  {project.title}
+                  <Text text={project.title} />
                 </h3>
                 <div className="flex gap-2 shrink-0">
-                  {project.links?.filter(link => link.type === "github").slice(0, 2).map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
-                  ))}
-                  {project.links?.filter(link => link.type === "demo").map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
-                  ))}
+                  {project.links
+                    ?.filter((link) => link.type === "github")
+                    .slice(0, 2)
+                    .map((link, index) => (
+                      <a
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    ))}
+                  {project.links
+                    ?.filter((link) => link.type === "demo")
+                    .map((link, index) => (
+                      <a
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                      </a>
+                    ))}
                 </div>
               </div>
 
@@ -75,24 +100,24 @@ export function ProjectCard({ project, onClick }: { project: Project; onClick: (
             </div>
 
             <p className="text-muted-foreground line-clamp-2">
-              {project.description}
+              <Text text={project.description} />
             </p>
 
             <div className="space-y-4">
               {project.tags && project.tags.length > 0 && (
                 <div className="flex flex-wrap gap-2">
                   {project.tags.slice(0, 3).map((tag) => (
-                    <Badge 
-                      key={tag} 
-                      variant="secondary" 
+                    <Badge
+                      key={tag}
+                      variant="secondary"
                       className="bg-secondary/50 hover:bg-secondary text-secondary-foreground"
                     >
                       {tag}
                     </Badge>
                   ))}
                   {project.tags.length > 3 && (
-                    <Badge 
-                      variant="secondary" 
+                    <Badge
+                      variant="secondary"
                       className="bg-secondary/50 hover:bg-secondary text-secondary-foreground"
                     >
                       +{project.tags.length - 3}

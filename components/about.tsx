@@ -21,6 +21,7 @@ import {
   Zap,
   MessageSquare,
 } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
 const skillCategories = {
   frontend: {
@@ -84,7 +85,10 @@ const skillCategories = {
     icon: <Cloud className="w-5 h-5" />,
     title: "Cloud",
     skills: [
-      { name: "AWS (EC2, ECS, RDS)", icon: <Cloud className="w-4 h-4" /> },
+      {
+        name: "AWS (EC2, ECS, RDS, ELB, S3)",
+        icon: <Cloud className="w-4 h-4" />,
+      },
       { name: "Azure", icon: <Cloud className="w-4 h-4" /> },
       { name: "Digital Ocean", icon: <Cloud className="w-4 h-4" /> },
       { name: "Vercel", icon: <Cloud className="w-4 h-4" /> },
@@ -121,6 +125,7 @@ const skillCategories = {
 };
 
 export function About() {
+  const t = useTranslation();
   return (
     <section id="about" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
@@ -134,21 +139,13 @@ export function About() {
           <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
 
           <p className="text-lg text-muted-foreground mb-12 text-center">
-            I'm a 24-year-old Computer Engineering student at NTNU, passionate
-            about programming, system design & architecture, and building full
-            scale solutions. I thrive on solving complex problems an turning
-            ideas into tangible products that make an impact.
+            {t.aboutme1}
           </p>
           <p className="text-lg text-muted-foreground mb-12 text-center">
-            Im deeply passionate about everything I choose to do, and its an
-            essension function in how I operate.
+            {t.aboutme2}
           </p>
           <p className="text-lg text-muted-foreground mb-12 text-center">
-            I bring hands-on experience in IT operations, leadership,
-            system/network administration, and a creative toolkit spanning film
-            production, photography, graphic design, marketing strategies, and
-            3D graphics. This unique combination allows me to bring a unique
-            perspective to every project.
+            {t.aboutme3}
           </p>
 
           <Tabs defaultValue="frontend" className="w-full">

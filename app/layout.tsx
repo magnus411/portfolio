@@ -1,10 +1,8 @@
+// app/layout.tsx
+import HreflangTags from "@/components/HreflangTags";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import { StructuredData } from "@/components/StructuredData";
 export const metadata: Metadata = {
   title: "Magnus Gjerstad |  Portfolio",
   description:
@@ -79,9 +77,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="no">
-      <body className={inter.className}>{children}</body>
-      <Analytics />
+    <html lang="en">
+      <head>
+        <HreflangTags lang="en" />
+        <StructuredData lang="en" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

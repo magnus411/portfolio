@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Tags } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
 export function ProjectsGrid() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -25,6 +26,7 @@ export function ProjectsGrid() {
     new Set(projects.flatMap((project) => project.tags || []))
   ).sort();
 
+  const t = useTranslation();
   const filteredProjects = projects
     .filter((project) => {
       const categoryMatch = project.category === selectedCategory;
@@ -37,26 +39,26 @@ export function ProjectsGrid() {
     .sort((a, b) => {
       // Define explicit priority order
       const priorityOrder = [
-        "meta-power-quad",  // Highest priority
-        "live-display-x", 
+        "meta-power-quad", // Highest priority
+        "live-display-x",
         "sparesti-system",
         "traffic-ai",
         "jotun-monitoring", // Third highest
         // ... add more as needed
       ];
-      
+
       const aIndex = priorityOrder.indexOf(a.id);
       const bIndex = priorityOrder.indexOf(b.id);
-      
+
       // If both are in priority list, sort by their position in the list
       if (aIndex !== -1 && bIndex !== -1) {
         return aIndex - bIndex;
       }
-      
+
       // If only one is in priority list, it comes first
       if (aIndex !== -1) return -1;
       if (bIndex !== -1) return 1;
-      
+
       // For non-priority projects, sort by date (newest first)
       if (a.date && b.date) {
         return new Date(b.date).getTime() - new Date(a.date).getTime();
@@ -65,10 +67,10 @@ export function ProjectsGrid() {
     });
 
   const categories = [
-    { id: "programming", label: "Programming" },
-    { id: "design", label: "Design" },
-    { id: "work", label: "Work Experience" },
-    { id: "education", label: "Education" }
+    { id: "programming", label: t.programming },
+    { id: "design", label: t.design },
+    { id: "work", label: t.work },
+    { id: "education", label: t.education },
   ];
 
   const handleCategoryChange = (category: string) => {
@@ -82,7 +84,7 @@ export function ProjectsGrid() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Portfolio</h2>
-          
+
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <div className="inline-flex bg-secondary/50 rounded-full p-1.5 flex-wrap justify-center">
               {categories.map((category) => (
@@ -99,7 +101,6 @@ export function ProjectsGrid() {
                 </button>
               ))}
             </div>
-
           </div>
 
           {selectedTags.length > 0 && (
@@ -114,7 +115,9 @@ export function ProjectsGrid() {
                   }
                 >
                   {tag}
-                  <span className="ml-2 opacity-60 group-hover:opacity-100">×</span>
+                  <span className="ml-2 opacity-60 group-hover:opacity-100">
+                    ×
+                  </span>
                 </Badge>
               ))}
               <Button
@@ -130,8 +133,8 @@ export function ProjectsGrid() {
         </div>
 
         <div className="min-h-[500px] relative">
-          <motion.div 
-            key={selectedCategory + selectedTags.join(',')}
+          <motion.div
+            key={selectedCategory + selectedTags.join(",")}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -149,7 +152,9 @@ export function ProjectsGrid() {
 
           {filteredProjects.length === 0 && !isAnimating && (
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-muted-foreground">No projects found matching your filters</p>
+              <p className="text-muted-foreground">
+                No projects found matching your filters
+              </p>
             </div>
           )}
         </div>

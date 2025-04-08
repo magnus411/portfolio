@@ -11,6 +11,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Link2 } from "lucide-react";
 import Image from "next/image";
+import { Text } from "./Text";
+import { useTranslation } from "@/hooks/use-translation";
+import { getTranslation } from "@/types/language";
 
 export function ProjectDialog({
   project,
@@ -21,11 +24,15 @@ export function ProjectDialog({
   isOpen: boolean;
   onClose: () => void;
 }) {
+  const t = useTranslation();
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">
+            <Text text={project.title} />
+          </DialogTitle>
           {project.period && (
             <p className="text-muted-foreground">{project.period}</p>
           )}
@@ -35,27 +42,36 @@ export function ProjectDialog({
           <div className="relative h-64 md:h-80 mt-4 rounded-lg overflow-hidden">
             <Image
               src={project.image}
-              alt={project.title}
+              alt={getTranslation(project.title, "en")}
               fill
               className="object-cover"
+              priority
             />
           </div>
         )}
 
         <div className="space-y-6 py-4">
           <div>
-            <h3 className="font-semibold mb-2">Overview</h3>
+            <h3 className="font-semibold mb-2">{t.overview}</h3>
             <p className="text-muted-foreground">
-              {project.longDescription || project.description}
+              <Text text={project.longDescription || project.description} />
             </p>
           </div>
 
           {project.features && (
             <div>
-              <h3 className="font-semibold mb-2">Key Features</h3>
+              <h3 className="font-semibold mb-2">{t.keyFeatures}</h3>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                 {project.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
+                  <li key={index}>
+                    <Text
+                      text={
+                        typeof feature === "string"
+                          ? { en: feature, no: feature }
+                          : feature
+                      }
+                    />
+                  </li>
                 ))}
               </ul>
             </div>
@@ -63,7 +79,7 @@ export function ProjectDialog({
 
           {project.technologies && (
             <div>
-              <h3 className="font-semibold mb-2">Technologies Used</h3>
+              <h3 className="font-semibold mb-2">{t.technologiesUsed}</h3>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <Badge key={index} variant="secondary">
@@ -76,7 +92,7 @@ export function ProjectDialog({
 
           {project.links && (
             <div>
-              <h3 className="font-semibold mb-3">Project Links</h3>
+              <h3 className="font-semibold mb-3">{t.projectLinks}</h3>
               <div className="flex flex-wrap gap-3">
                 {project.links.map((link, index) => (
                   <a
@@ -87,9 +103,11 @@ export function ProjectDialog({
                   >
                     <Button variant="outline" size="sm" className="gap-2">
                       {link.type === "github" && <Github className="w-4 h-4" />}
-                      {link.type === "demo" && <ExternalLink className="w-4 h-4" />}
+                      {link.type === "demo" && (
+                        <ExternalLink className="w-4 h-4" />
+                      )}
                       {link.type === "docs" && <Link2 className="w-4 h-4" />}
-                      {link.title}
+                      <Text text={link.title} />
                     </Button>
                   </a>
                 ))}
