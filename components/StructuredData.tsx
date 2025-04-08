@@ -13,10 +13,6 @@ export function StructuredData({ lang }: { lang: "en" | "no" }) {
       "https://www.linkedin.com/in/magnus-gjerstad-85b184177/",
       "https://github.com/magnus411",
     ],
-    alumniOf: {
-      "@type": "EducationalOrganization",
-      name: "NTNU",
-    },
   };
 
   return (

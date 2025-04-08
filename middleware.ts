@@ -22,24 +22,12 @@ export function middleware(request: NextRequest) {
     });
   }
 
-  // Handle missing locale
-  const pathnameIsMissingLocale = LOCALES.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  );
-
-  if (pathnameIsMissingLocale) {
-    return NextResponse.redirect(
-      new URL(`/${DEFAULT_LOCALE}${pathname}${search}`, request.url),
-      { status: 301 } // Permanent redirect
-    );
-  }
-
   return NextResponse.next();
 }
 
 export const config = {
   matcher: [
     "/", // Only match root path
-    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|en|no).*)",
   ],
 };
