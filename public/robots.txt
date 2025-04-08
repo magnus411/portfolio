@@ -2,7 +2,5 @@ User-agent: *
 Allow: /
 Allow: /en/
 Allow: /no/
-Disallow: /api/
-Disallow: /_next/
 
 Sitemap: https://gjerstad.tech/sitemap.xml
