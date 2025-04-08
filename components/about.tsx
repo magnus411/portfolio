@@ -55,8 +55,6 @@ const skillCategories = {
       { name: "JWT", icon: <Lock className="w-4 h-4" /> },
       { name: "REST", icon: <FileJson className="w-4 h-4" /> },
       { name: "MQTT", icon: <Radio className="w-4 h-4" /> },
-      { name: "Modbus", icon: <Radio className="w-4 h-4" /> },
-      { name: "OIDC", icon: <Radio className="w-4 h-4" /> },
       { name: "OAuth2", icon: <Radio className="w-4 h-4" /> },
     ],
   },
@@ -78,6 +76,8 @@ const skillCategories = {
       { name: "Docker Compose", icon: <Box className="w-4 h-4" /> },
       { name: "GitHub Actions", icon: <GitBranch className="w-4 h-4" /> },
       { name: "Git", icon: <GitBranch className="w-4 h-4" /> },
+      { name: "Prometheus", icon: <Zap className="w-4 h-4" /> },
+      { name: "Grafana", icon: <Zap className="w-4 h-4" /> },
     ],
   },
   cloud: {
@@ -87,6 +87,7 @@ const skillCategories = {
       { name: "AWS (EC2, ECS, RDS)", icon: <Cloud className="w-4 h-4" /> },
       { name: "Azure", icon: <Cloud className="w-4 h-4" /> },
       { name: "Digital Ocean", icon: <Cloud className="w-4 h-4" /> },
+      { name: "Vercel", icon: <Cloud className="w-4 h-4" /> },
     ],
   },
   infrastructure: {
@@ -95,12 +96,14 @@ const skillCategories = {
     skills: [
       { name: "Windows Server", icon: <Server className="w-4 h-4" /> },
       { name: "Active Directory", icon: <Server className="w-4 h-4" /> },
-      { name: "Ubuntu Server", icon: <Linux className="w-4 h-4" /> },
-      { name: "Debian 8", icon: <Linux className="w-4 h-4" /> },
       {
         name: "Windows Deployment Services",
         icon: <Box className="w-4 h-4" />,
       },
+
+      { name: "Ubuntu Server", icon: <Linux className="w-4 h-4" /> },
+      { name: "Debian 8", icon: <Linux className="w-4 h-4" /> },
+      { name: "Fortigate", icon: <Lock className="w-4 h-4" /> },
     ],
   },
   design: {
@@ -108,6 +111,7 @@ const skillCategories = {
     title: "Design",
     skills: [
       { name: "Figma", icon: <Palette className="w-4 h-4" /> },
+      { name: "Blender", icon: <Box className="w-4 h-4" /> },
       { name: "Photoshop", icon: <Palette className="w-4 h-4" /> },
       { name: "After Effects", icon: <Film className="w-4 h-4" /> },
       { name: "Premiere Pro", icon: <Film className="w-4 h-4" /> },
