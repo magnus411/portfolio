@@ -5,4 +5,4 @@ Allow: /no/
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://www.gjerstad.tech/sitemap.xml
+Sitemap: https://gjerstad.tech/sitemap.xml
