@@ -668,77 +668,6 @@ export const projects: Project[] = [
   },
   
   {
-    id: "apartment-hunter",
-    title: {
-      en: "Apartment Hunting Website",
-      no: "Leilighetsjakt nettsted",
-    },
-    description: {
-      en: "Next.js application for apartment hunting in Trondheim.",
-      no: "Next.js-applikasjon for leilighetsjakt i Trondheim.",
-    },
-    longDescription: {
-      en: "Developed a website about what me and my girlfriend was looking for in an apartment, and shared it arount to potential lenders. Much more fun then sending them a boring message. This way they get to know us better. It was a huge success and we got lots of offers. We setted on an apartment that would have been way over our budget, but with the help of this website we got it for a reasonable price.",
-      no: "Utviklet en nettside om hva jeg og kjæresten min så etter i en leilighet, og delte den med potensielle utleiere. Mye morsommere enn å sende dem en kjedelig melding. På denne måten ble de bedre kjent med oss. Det var en stor suksess og vi fikk mange tilbud. Vi bestemte oss for en leilighet som ville ha vært langt over budsjettet vårt, men med hjelp av denne nettsiden fikk vi den til en rimelig pris.",
-    },
-    category: "programming",
-    date: "2024-02-01",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
-    links: [
-      {
-        url: "https://github.com/magnus411/Soker-leilighet",
-        title: {
-          en: "Source Code",
-          no: "Kildekode",
-        },
-        type: "github",
-      },
-      {
-        url: "https://www.mmsokerleilighet.info/",
-        title: {
-          en: "Live Demo",
-          no: "Live demo",
-        },
-        type: "demo",
-      },
-    ],
-    features: [
-      "Responsive property listings",
-      "Advanced search filters",
-      "Contact management system",
-      "Admin dashboard",
-    ],
-  },
-  {
-    id: "budget-planner",
-    title: {
-      en: "Budget Planner Application",
-      no: "Budsjettplanlegger applikasjon",
-    },
-    description: {
-      en: "Full-stack budgeting application, in collaboration with BN Bank.",
-      no: "Fullstack budsjettapplikasjon, i samarbeid med BN Bank.",
-    },
-    longDescription: {
-      en: "Developed for the SysDev1 course in collaboration with BN Bank, this application offers budget planning, expense categorization, and financial analytics. It features a Spring Boot backend.",
-      no: "Utviklet for SysDev1-kurset i samarbeid med BN Bank, tilbyr denne applikasjonen budsjettplanlegging, utgiftskategorisering og finansanalyse. Den har en Spring Boot-backend.",
-    },
-    category: "programming",
-    date: "2023-11-01",
-    tags: ["Java", "Spring Boot", "Fullstack"],
-    technologies: ["Java", "Spring Boot", "MySQL"],
-    links: [
-      {
-        url: "https://github.com/magnus411/Budgetplan",
-        title: {
-          en: "Repository",
-          no: "Repository",
-        },
-        type: "github",
-      },
-    ],
-  },
-  {
     id: "path-game",
     title: {
       en: "Modular Path Construction Game",
@@ -801,44 +730,6 @@ export const projects: Project[] = [
         },
         type: "github",
       },
-    ],
-  },
-  // Work Experience (updated)
-
-  // Education (updated)
-  {
-    id: "traffic-ai",
-    title: {
-      en: "Traffic Light AI Controller",
-      no: "Trafikklys AI-kontroller",
-    },
-    description: {
-      en: "Machine learning system for optimizing traffic light coordination.",
-      no: "Maskinlæringssystem for optimalisering av trafikklyskoordinering.",
-    },
-    longDescription: {
-      en: "Implemented a PPO reinforcement learning agent to control multiple traffic light intersections in SUMO simulations. The system reduces congestion by enabling lights to communicate and predict traffic patterns.",
-      no: "Implementerte en PPO forsterkningslæringsagent for å kontrollere flere trafikklys-kryss i SUMO-simuleringer. Systemet reduserer trafikkorker ved å la lysene kommunisere og forutsi trafikkmønstre.",
-    },
-    category: "programming",
-    date: "2023-10-01",
-    tags: ["Python", "RLlib", "SUMO"],
-    technologies: ["Python", "RLlib", "SUMO", "RLlib"],
-    links: [
-      {
-        url: "https://github.com/magnus411/traffic",
-        title: {
-          en: "Source Code",
-          no: "Kildekode",
-        },
-        type: "github",
-      },
-    ],
-    features: [
-      "Multi-intersection coordination",
-      "Traffic prediction",
-      "PPO reinforcement learning",
-      "SUMO simulation integration",
     ],
   },
   {
@@ -914,74 +805,7 @@ export const projects: Project[] = [
     ],
   },
 
-  {
-    id: "path-game",
-    title: {
-      en: "Modular Path Construction Game",
-      no: "Modulært banekonstruksjonsspill",
-    },
-    description: {
-      en: "Java game featuring dynamic path building mechanics.",
-      no: "Java-spill med dynamiske banebygningsmekanikker.",
-    },
-    longDescription: {
-      en: "A puzzle game where players construct paths by connecting modular components. Developed with JavaFX featuring level editor and progressive difficulty system.",
-      no: "Et puslespill hvor spillere konstruerer baner ved å koble sammen modulære komponenter. Utviklet med JavaFX, med nivåredigering og progressivt vanskelighetsgrad-system.",
-    },
-    category: "programming",
-    date: "2023-09-01",
-    tags: ["Java", "JavaFX"],
-    technologies: ["Java 17", "JavaFX"],
-    links: [
-      {
-        url: "https://github.com/magnus411/Path-Game",
-        title: {
-          en: "Repository",
-          no: "Repository",
-        },
-        type: "github",
-      },
-    ],
-  },
 
-  // Updated Existing Projects
-  {
-    id: "portfolio-website",
-    title: {
-      en: "Portfolio Website v2",
-      no: "Portefølje nettsted v2",
-    },
-    description: {
-      en: "Portfolio website showcasing projects.",
-      no: "Porteføljenettsted som viser frem prosjekter.",
-    },
-    longDescription: {
-      en: "Portfolio website showcasing projects.",
-      no: "Porteføljenettsted som viser frem prosjekter.",
-    },
-    category: "programming",
-    date: "2024-04-01",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    technologies: [
-      "Next.js 14",
-      "TypeScript 5",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
-    links: [
-      {
-        url: "https://github.com/magnus411/portfolio",
-        title: {
-          en: "Repository",
-          no: "Repository",
-        },
-        type: "github",
-      },
-    ],
-  },
-
-
-  // Education (updated)
   {
     id: "dynamic-scoreboard",
     title: {
