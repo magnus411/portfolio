@@ -78,10 +78,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <HreflangTags lang="en" />
-        <StructuredData lang="en" />
-      </head>
       <body>{children}</body>
     </html>
   );

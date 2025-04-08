@@ -16,18 +16,21 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL(`/${DEFAULT_LOCALE}`, request.url), {
+      status: 301,
+    });
+  }
+
+  // Handle missing locale
   const pathnameIsMissingLocale = LOCALES.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
-  if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${DEFAULT_LOCALE}`, request.url));
-  }
-
   if (pathnameIsMissingLocale) {
-    const locale = DEFAULT_LOCALE;
     return NextResponse.redirect(
-      new URL(`/${locale}${pathname}${search}`, request.url)
+      new URL(`/${DEFAULT_LOCALE}${pathname}${search}`, request.url),
+      { status: 301 } // Permanent redirect
     );
   }
 
@@ -36,6 +39,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
+    "/", // Only match root path
     "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
   ],
 };
