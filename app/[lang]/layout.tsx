@@ -79,6 +79,7 @@ export default function LocaleLayout({
       <head>
         <HreflangTags lang={params.lang} />
         <StructuredData lang={params.lang} />
+        <link rel="canonical" href={`https://gjerstad.tech/${params.lang}`} />
       </head>
       <body>
         <LanguageProvider initialLanguage={params.lang}>

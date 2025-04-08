@@ -6,7 +6,7 @@ const LOCALES = ["en", "no"];
 const DEFAULT_LOCALE = "en";
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname, search } = request.nextUrl;
 
   if (
     PUBLIC_FILE.test(pathname) ||
@@ -20,10 +20,14 @@ export function middleware(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL(`/${DEFAULT_LOCALE}`, request.url));
+  }
+
   if (pathnameIsMissingLocale) {
     const locale = DEFAULT_LOCALE;
     return NextResponse.redirect(
-      new URL(`/${locale}${pathname === "/" ? "" : pathname}`, request.url)
+      new URL(`/${locale}${pathname}${search}`, request.url)
     );
   }
 
@@ -31,5 +35,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
+  ],
 };
