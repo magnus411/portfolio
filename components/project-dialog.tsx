@@ -101,7 +101,12 @@ export function ProjectDialog({
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button variant="outline" size="sm" className="gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="gap-2"
+                      aria-label={link.type}
+                    >
                       {link.type === "github" && <Github className="w-4 h-4" />}
                       {link.type === "demo" && (
                         <ExternalLink className="w-4 h-4" />

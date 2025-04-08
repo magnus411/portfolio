@@ -91,6 +91,7 @@ export function Navbar() {
       <div className="md:hidden fixed top-6 right-6 z-50">
         {/* Mobile Menu Button */}
         <button
+          aria-label="Toggle mobile menu"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className={`p-4 rounded-full ${
             isScrolled

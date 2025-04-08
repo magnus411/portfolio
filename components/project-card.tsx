@@ -72,6 +72,7 @@ export function ProjectCard({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
+                        aria-label={`Visit ${project.title} on GitHub`}
                       >
                         <Github className="w-5 h-5" />
                       </a>
@@ -85,6 +86,7 @@ export function ProjectCard({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
+                        aria-label={`Visit demo of ${project.title}`}
                       >
                         <ExternalLink className="w-5 h-5" />
                       </a>
@@ -129,6 +131,7 @@ export function ProjectCard({
               <Button
                 variant="ghost"
                 size="sm"
+                aria-label="View Details"
                 className="group/btn w-full justify-between hover:bg-primary hover:text-primary-foreground"
                 onClick={onClick}
               >

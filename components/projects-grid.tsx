@@ -89,6 +89,7 @@ export function ProjectsGrid() {
             <div className="inline-flex bg-secondary/50 rounded-full p-1.5 flex-wrap justify-center">
               {categories.map((category) => (
                 <button
+                  aria-label={category.label}
                   key={category.id}
                   onClick={() => handleCategoryChange(category.id)}
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
@@ -121,6 +122,7 @@ export function ProjectsGrid() {
                 </Badge>
               ))}
               <Button
+                aria-label="Clear all tags"
                 variant="ghost"
                 size="sm"
                 className="text-muted-foreground hover:text-foreground"
