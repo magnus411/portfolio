@@ -171,8 +171,8 @@ export const projects: Project[] = [
       no: "Ga ekspertrådgivning om oppsett og løsninger for flerkamera-strømming.",
     },
     longDescription: {
-      en: "Served as a consultant for Sonans, producing a comprehensive report on multi-camera streaming setup, including technical recommendations and solutions for various streaming challenges.",
-      no: "Fungerte som konsulent for Sonans, og produserte en omfattende rapport om flerkamera-strømmingsoppsett, inkludert tekniske anbefalinger og løsninger for ulike strømmingsutfordringer.",
+      en: "Served as a consultant for Sonans, producing a report on multi-camera streaming setup, including technical recommendations and solutions for various streaming challenges.",
+      no: "Fungerte som konsulent for Sonans, og produserte en rapport om flerkamera-strømmingsoppsett, inkludert tekniske anbefalinger og løsninger for ulike strømmingsutfordringer.",
     },
     category: "work",
     period: "February 2022",
@@ -206,7 +206,7 @@ export const projects: Project[] = [
     },
     longDescription: {
       en: "Gained extensive experience in sales techniques and customer satisfaction strategies. Developed skills in understanding different personality types and creating value propositions that benefit both customers and the company.",
-      no: "Fikk omfattende erfaring med salgsteknikker og kundetilfredshetsstrategier. Utviklet ferdigheter i å forstå forskjellige personlighetstyper og skape verdiforslag som gagner både kunder og bedriften.",
+      no: "Fikk erfaring med salgsteknikker og kundetilfredshetsstrategier. Utviklet ferdigheter i å forstå forskjellige personlighetstyper og skape verdiforslag som gagner både kunder og bedriften.",
     },
     category: "work",
     period: "August 2019 - June 2020",
@@ -263,6 +263,25 @@ export const projects: Project[] = [
     date: "2014-11-01",
     tags: [],
   },
+  {
+    id: "bookibud-developer",
+    title: {
+      en: "System Developer at Bookibud",
+      no: "Systemutvikler hos Bookibud",
+    },
+    description: {
+      en: "Worked as a system developer for Bookibud and helped develop theire state of the art booking systems.",
+      no: "Jobbest som systemutvikler for Bookibud og hjalp til med å utvikle deres toppmoderne bookingsystem.",
+    },
+    longDescription: {
+      en: "As a system developer at Bookibud, I was responsible for helping developing the admin page as well as an integration to tripletex",
+      no: "Som systemutvikler hos Bookibud var jeg ansvarlig for å hjelpe til med utviklingen av administrasjonssiden samt en integrasjon til Tripletex.",
+    },
+    category: "work",
+    period: "June 2024 - August 2024",
+    date: "2024-06-25",
+  },
+
 
   // Education
   {
@@ -353,6 +372,7 @@ export const projects: Project[] = [
     ],
     features: [],
   },
+  
   {
     id: "sparesti-system",
     title: {
@@ -547,8 +567,8 @@ export const projects: Project[] = [
       no: "Dynamisk innholdsstyringssystem for e-sportssenter skjermer.",
     },
     longDescription: {
-      en: "Developed a comprehensive digital signage solution enabling dynamic updates of TV displays throughout our esports center. The system shows events, Twitch streams, menus, and promotional content. Features include role-based access control, scheduling, and emergency message broadcasting capabilities.",
-      no: "Utviklet en omfattende digital skiltløsning som muliggjør dynamiske oppdateringer av TV-skjermer i hele e-sportssenteret vårt. Systemet viser arrangementer, Twitch-strømmer, menyer og promoteringsinnhold. Funksjoner inkluderer rollebasert tilgangskontroll, planlegging og kringkastingsmuligheter for nødmeldinger.",
+      en: "Developed a digital signage solution enabling dynamic updates of TV displays throughout our esports center. The system shows events, Twitch streams, menus, and promotional content. Features include role-based access control, scheduling, and emergency message broadcasting capabilities.",
+      no: "Utviklet en digital skiltløsning som muliggjør dynamiske oppdateringer av TV-skjermer i hele e-sportssenteret vårt. Systemet viser arrangementer, Twitch-strømmer, menyer og promoteringsinnhold. Funksjoner inkluderer rollebasert tilgangskontroll, planlegging og kringkastingsmuligheter for nødmeldinger.",
     },
     category: "programming",
     date: "2023-05-01",
@@ -646,6 +666,7 @@ export const projects: Project[] = [
       "SUMO simulation integration",
     ],
   },
+  
   {
     id: "apartment-hunter",
     title: {
@@ -783,24 +804,6 @@ export const projects: Project[] = [
     ],
   },
   // Work Experience (updated)
-  {
-    id: "bookibud-developer",
-    title: {
-      en: "System Developer at Bookibud",
-      no: "Systemutvikler hos Bookibud",
-    },
-    description: {
-      en: "Developing scalable booking systems for sports facilities.",
-      no: "Utvikler skalerbare bookingsystemer for idrettsanlegg.",
-    },
-    longDescription: {
-      en: "Implementing microservice architecture for a nationwide sports facility booking platform. Responsibilities include API design, database optimization, and CI/CD pipeline configuration.",
-      no: "Implementerer mikrotjenestearkitektur for en landsdekkende bookingplattform for idrettsanlegg. Ansvarsområder inkluderer API-design, databaseoptimalisering og CI/CD-pipeline konfigurasjon.",
-    },
-    category: "work",
-    period: "June 2024 - Present",
-    date: "2024-06-25",
-  },
 
   // Education (updated)
   {
@@ -880,6 +883,7 @@ export const projects: Project[] = [
       "Admin dashboard",
     ],
   },
+  
   {
     id: "budget-planner",
     title: {
@@ -976,25 +980,6 @@ export const projects: Project[] = [
     ],
   },
 
-  // Work Experience (updated)
-  {
-    id: "bookibud-developer",
-    title: {
-      en: "System Developer at Bookibud",
-      no: "Systemutvikler hos Bookibud",
-    },
-    description: {
-      en: "Developing scalable booking systems for sports facilities.",
-      no: "Utvikler skalerbare bookingsystemer for idrettsanlegg.",
-    },
-    longDescription: {
-      en: "Implementing microservice architecture for a nationwide sports facility booking platform. Responsibilities include API design, database optimization, and CI/CD pipeline configuration.",
-      no: "Implementerer mikrotjenestearkitektur for en landsdekkende bookingplattform for idrettsanlegg. Ansvarsområder inkluderer API-design, databaseoptimalisering og CI/CD-pipeline konfigurasjon.",
-    },
-    category: "work",
-    period: "June 2024 - Present",
-    date: "2024-06-25",
-  },
 
   // Education (updated)
   {
@@ -1038,8 +1023,8 @@ export const projects: Project[] = [
       no: "Statistisk analyse som sammenligner prising av gutte- vs jente-Legoesker.",
     },
     longDescription: {
-      en: "Conducted a comprehensive statistical analysis investigating price differences between boys' and girls' Lego sets. Developed Python scripts for data collection, cleaning, and analysis, employing hypothesis testing and visualization techniques to draw meaningful conclusions about gender-based pricing disparities in toys.",
-      no: "Gjennomførte en omfattende statistisk analyse som undersøkte prisforskjeller mellom gutte- og jente-Legoesker. Utviklet Python-skript for datainnsamling, -rensing og -analyse, med bruk av hypotesetesting og visualiseringsteknikker for å trekke meningsfulle konklusjoner om kjønnsbaserte prisforskjeller i leker.",
+      en: "Conducted a statistical analysis investigating price differences between boys' and girls' Lego sets. Developed Python scripts for data collection, cleaning, and analysis, employing hypothesis testing and visualization techniques to draw meaningful conclusions about gender-based pricing disparities in toys.",
+      no: "Gjennomførte en statistisk analyse som undersøkte prisforskjeller mellom gutte- og jente-Legoesker. Utviklet Python-skript for datainnsamling, -rensing og -analyse, med bruk av hypotesetesting og visualiseringsteknikker for å trekke meningsfulle konklusjoner om kjønnsbaserte prisforskjeller i leker.",
     },
     category: "programming",
     date: "2023-11-01",
@@ -1079,8 +1064,8 @@ export const projects: Project[] = [
       no: "Jotunheimen Esport 3D-design",
     },
     description: {
-      en: "Comprehensive 3D visualization of Jotunheimen EsportCenter.",
-      no: "Omfattende 3D-visualisering av Jotunheimen E-sportssenter.",
+      en: " 3D visualization of Jotunheimen EsportCenter.",
+      no: " 3D-visualisering av Jotunheimen E-sportssenter.",
     },
     longDescription: {
       en: "Created detailed 3D visualizations of Jotunheimen EsportCenter using Blender. This project was instrumental in the planning phase, allowing stakeholders to visualize the final result and make informed decisions about the layout and design.",
@@ -1095,7 +1080,6 @@ export const projects: Project[] = [
       "Interior Design",
       "Architectural Visualization",
     ],
-    technologies: ["Blender", "3D Modeling", "Lighting", "Texturing"],
     features: [
       "Detailed interior visualization",
       "Gaming setup layouts",
@@ -1122,14 +1106,63 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "astronaut-3d",
+    id: "filmmaking-showreel",
     title: {
-      en: "Astronaut 3D School Project",
-      no: "Astronaut 3D skoleprosjekt",
+      en: "Filmmaking Showreels",
+      no: "Filmshowreels",
     },
     description: {
-      en: "Detailed 3D modeling project featuring an astronaut character design.",
-      no: "Detaljert 3D-modelleringsprosjekt med en astronaut-karakterdesign.",
+      en: "Compilation of video projects created for clients and personal use.",
+      no: "Kompilasjon av videoprosjekter laget for kunder og privat bruk.",
+    },
+    longDescription: {
+      en: "These showreels include various film projects made for businesses such as Egon Restaurant and Trondheim Kommune, as well as private creative productions. The videos showcase a range of skills including cinematography, editing, color grading, and storytelling.",
+      no: "Disse showreelene inneholder ulike filmprosjekter laget for bedrifter som Egon Restaurant og Trondheim Kommune, samt private kreative produksjoner. Videoene viser et bredt spekter av ferdigheter, inkludert filmopptak, klipping, fargekorrigering og historiefortelling.",
+    },
+    category: "design",
+    date: "2023-10-01",
+    tags: [
+      "Filmmaking",
+      "Cinematography",
+      "Video Editing",
+      "Color Grading",
+      "Storytelling"
+    ],
+    technologies: [],
+    features: [
+      "Client work for businesses and government",
+      "Private short film projects",
+      "Color grading and visual tone",
+      "Narrative and promotional content"
+    ],
+    links: [
+      {
+        url: "https://youtu.be/A8D2Cd5rNFA",
+        title: {
+          en: "Showreel 2023 – Business & Creative",
+          no: "Showreel 2023 – Bedrift og kreativt",
+        },
+        type: "demo",
+      },
+      {
+        url: "https://youtu.be/kLZiavN3fWE",
+        title: {
+          en: "Showreel 2022 – Visual Projects",
+          no: "Showreel 2022 – Visuelle prosjekter",
+        },
+        type: "demo",
+      },
+    ],
+  },
+  {
+    id: "astronaut-3d",
+    title: {
+      en: "Astronaut 3D ",
+      no: "Astronaut 3D ",
+    },
+    description: {
+      en: "Detailed 3D modeling project featuring an astronaut character design. We used it for an ad campaign for Jotunheimen Esport.",
+      no: "Detaljert 3D-modelleringsprosjekt med en astronaut-karakterdesign. Vi brukte det til en reklamekampanje for Jotunheimen Esport.",
     },
     image: "https://i.imgur.com/bwHN1ux.jpg",
     category: "design",
@@ -1146,4 +1179,7 @@ export const projects: Project[] = [
       },
     ],
   },
+  
+  
+
 ];

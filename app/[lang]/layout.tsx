@@ -44,7 +44,7 @@ export async function generateMetadata({
       siteName: "Magnus Gjerstad Portfolio",
       images: [
         {
-          url: "https://www.gjerstad.tech/_next/image?url=%2FGjerstad.webp&w=1080&q=75",
+          url: "https://gjerstad.tech/_next/image?url=%2FGjerstad.webp&w=1080&q=75",
           width: 1350,
           height: 1080,
           alt: "Magnus Gjerstad Portfolio",
@@ -80,6 +80,8 @@ export default function LocaleLayout({
         <HreflangTags lang={params.lang} />
         <StructuredData lang={params.lang} />
         <link rel="canonical" href={`https://gjerstad.tech/${params.lang}`} />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+
       </head>
       <body>
         <LanguageProvider initialLanguage={params.lang}>

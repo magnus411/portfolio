@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Magnus Gjerstad Portfolio",
     images: [
       {
-        url: "https://www.gjerstad.tech/_next/image?url=%2FGjerstad.webp&w=1080&q=75",
+        url: "https://gjerstad.tech/_next/image?url=%2FGjerstad.webp&w=1080&q=75",
         width: 1350,
         height: 1080,
         alt: "Magnus Gjerstad Portfolio",
@@ -78,6 +78,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+
+      </head>
       <body>{children}</body>
     </html>
   );

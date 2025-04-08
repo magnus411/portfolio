@@ -43,7 +43,10 @@ export function ProjectsGrid() {
         "live-display-x",
         "sparesti-system",
         "traffic-ai",
-        "jotun-monitoring", // Third highest
+        "jotun-monitoring",
+        "jotunheimen-leadership",
+        "gtp-design",
+        "bookibud-developer" // Third highest
         // ... add more as needed
       ];
 
