@@ -6,14 +6,12 @@ import { About } from "@/components/about";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { ScrollTracker } from "@/components/ScrollTracker";
+import { hotjar } from "react-hotjar";
 import { useEffect } from "react";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <ScrollTracker />
-
       <Navbar />
       <Hero />
       <About />

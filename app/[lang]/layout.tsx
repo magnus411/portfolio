@@ -9,6 +9,7 @@ import { ReactNode } from "react";
 import { getMessages } from "@/lib/messages";
 import HreflangTags from "@/components/HreflangTags";
 import { StructuredData } from "@/components/StructuredData";
+import Script from "next/script";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "no" }];
@@ -77,6 +78,24 @@ export default function LocaleLayout({
   return (
     <html lang={params.lang}>
       <head>
+        <Script id="hotjar">
+          {`
+          (function (h, o, t, j, a, r) {
+            h.hj =
+              h.hj ||
+              function () {
+                // eslint-disable-next-line prefer-rest-params
+                (h.hj.q = h.hj.q || []).push(arguments);
+              };
+            h._hjSettings = { hjid: 3234532, hjsv: 6 };
+            a = o.getElementsByTagName("head")[0];
+            r = o.createElement("script");
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+        `}
+        </Script>
         <HreflangTags lang={params.lang} />
         <StructuredData lang={params.lang} />
         <link rel="canonical" href={`https://gjerstad.tech/${params.lang}`} />

@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Tags } from "lucide-react";
 import { useTranslation } from "@/hooks/use-translation";
-import { trackEvent } from "@/lib/tracking";
 
 export function ProjectsGrid() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -97,7 +96,6 @@ export function ProjectsGrid() {
                   key={category.id}
                   onClick={() => {
                     handleCategoryChange(category.id);
-                    trackEvent("Projects", "Filter by Category", category.id);
                   }}
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                     selectedCategory === category.id
@@ -156,7 +154,6 @@ export function ProjectsGrid() {
                 project={project}
                 onClick={() => {
                   setSelectedProject(project);
-                  trackEvent("Projects", "View Details", project.id);
                 }}
               />
             ))}

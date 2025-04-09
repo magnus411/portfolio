@@ -4,7 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { StructuredData } from "@/components/StructuredData";
 import { Analytics } from "@vercel/analytics/next";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Magnus Gjerstad |  Portfolio",
@@ -95,8 +95,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <GoogleTagManager gtmId="GTM-PZPQQR8L" />
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-R040JXVPZE" />
     </html>
   );
 }
