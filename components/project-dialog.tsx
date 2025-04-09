@@ -14,7 +14,7 @@ import Image from "next/image";
 import { Text } from "./Text";
 import { useTranslation } from "@/hooks/use-translation";
 import { getTranslation } from "@/types/language";
-
+import { trackEvent } from "@/lib/tracking";
 export function ProjectDialog({
   project,
   isOpen,
@@ -100,6 +100,7 @@ export function ProjectDialog({
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackEvent("Social", "Click", "ProjectLink")}
                   >
                     <Button
                       variant="outline"

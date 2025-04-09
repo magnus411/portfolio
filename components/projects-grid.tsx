@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Tags } from "lucide-react";
 import { useTranslation } from "@/hooks/use-translation";
+import { trackEvent } from "@/lib/tracking";
 
 export function ProjectsGrid() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -46,7 +47,7 @@ export function ProjectsGrid() {
         "jotun-monitoring",
         "jotunheimen-leadership",
         "gtp-design",
-        "bookibud-developer" // Third highest
+        "bookibud-developer", // Third highest
         // ... add more as needed
       ];
 
@@ -94,7 +95,10 @@ export function ProjectsGrid() {
                 <button
                   aria-label={category.label}
                   key={category.id}
-                  onClick={() => handleCategoryChange(category.id)}
+                  onClick={() => {
+                    handleCategoryChange(category.id);
+                    trackEvent("Projects", "Filter by Category", category.id);
+                  }}
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                     selectedCategory === category.id
                       ? "bg-primary text-primary-foreground shadow-md"
@@ -150,7 +154,10 @@ export function ProjectsGrid() {
               <ProjectCard
                 key={project.id}
                 project={project}
-                onClick={() => setSelectedProject(project)}
+                onClick={() => {
+                  setSelectedProject(project);
+                  trackEvent("Projects", "View Details", project.id);
+                }}
               />
             ))}
           </motion.div>

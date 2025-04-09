@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/use-translation";
+import { trackEvent } from "@/lib/tracking";
 
 export function Hero() {
   const t = useTranslation();
@@ -54,6 +55,7 @@ export function Hero() {
               <a
                 href="https://github.com/magnus411"
                 target="_blank"
+                onClick={() => trackEvent("Social", "Click", "GitHub")}
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
@@ -63,6 +65,7 @@ export function Hero() {
               <a
                 href="https://www.linkedin.com/in/magnus-gjerstad-85b184177/"
                 target="_blank"
+                onClick={() => trackEvent("Social", "Click", "LinkedIn")}
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
@@ -71,6 +74,7 @@ export function Hero() {
               </a>
               <a
                 href="mailto:magnusgjerstad00@gmail.com"
+                onClick={() => trackEvent("Social", "Click", "Email")}
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-6 h-6" />
