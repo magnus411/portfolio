@@ -24,7 +24,7 @@ export const en = {
   fullStackDeveloper: "Full Stack Developer",
   learnMore: "Learn More",
   aboutme1:
-    "I'm a 24-year-old Computer Engineering student at NTNU, passionate about programming, system design & architecture, and building full scale solutions. I thrive on solving complex problems an turning ideas into tangible products that make an impact.",
+    "I'm a 24-year-old Computer Engineering student at NTNU in Trondheim, passionate about programming, system design & architecture, and building full scale solutions. I thrive on solving complex problems an turning ideas into tangible products that make an impact.",
 
   aboutme2:
     "Im deeply passionate about everything I choose to do, and its an essension function in how I operate.",

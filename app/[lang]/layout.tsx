@@ -81,7 +81,6 @@ export default function LocaleLayout({
         <StructuredData lang={params.lang} />
         <link rel="canonical" href={`https://gjerstad.tech/${params.lang}`} />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-
       </head>
       <body>
         <LanguageProvider initialLanguage={params.lang}>

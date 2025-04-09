@@ -24,7 +24,7 @@ export const no = {
   fullStackDeveloper: "Fullstack-utvikler",
   learnMore: "Les mer",
   aboutme1:
-    "  Jeg er en 24 år gammel dataingeniørstudent ved NTNU, med en sterk lidenskap for programmering, systemdesign og arkitektur, og å bygge løsninger i full skala. Jeg trives med å løse komplekse problemer og gjøre idéer om til håndfaste produkter som utgjør en forskjell.",
+    "  Jeg er en 24 år gammel dataingeniørstudent ved NTNU i Trondheim, med en sterk lidenskap for programmering, systemdesign og arkitektur, og å bygge løsninger i full skala. Jeg trives med å løse komplekse problemer og gjøre idéer om til håndfaste produkter som utgjør en forskjell.",
   aboutme2:
     "  Jeg er dypt lidenskapelig opptatt av alt jeg velger å gjøre, og det er en essensiell del av hvordan jeg jobber.",
   aboutme3:

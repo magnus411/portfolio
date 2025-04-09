@@ -31,6 +31,17 @@ export const metadata: Metadata = {
     "programmering",
     "norsk utvikler",
     "norsk ingeniør",
+    "trondheim",
+    "magnus gjerstad",
+    "magnus",
+    "gjerstad",
+    "magnusgjerstad",
+    "gjerstad.tech",
+    "trondheim utvikler",
+    "trondheim ingeniør",
+    "trondheim dataingeniør",
+    "trondheim datateknologi",
+    "trondheim student",
     "NTNU student",
     "datateknologi",
   ],
@@ -79,8 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>{children}</body>
     </html>
